@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(to right,blue,violet) ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+@media (min-width:1000px) {
+    div{
+        height: 380px;
+        width: 450px;
+        background-color: white;
+        margin-left: 400px;
+        margin-top: 100px;
+        border-radius: 25px;
+        box-shadow: 0px 0.5px 10px black,0px -0.5px 10px black;
+    }
+    h4{
+        margin-left: 30px;
+        margin-top: 30px;
+        position: fixed;
+    }
+    .fa-solid{
+        margin-left: 10px;
+        color: orange;
+    }
+    input{
+        position: fixed;
+        margin-top: 80px;
+        padding-left: 30px;
+        margin-left: 50px;
+        width: 320px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        background-color:bisque;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        margin-top: 80px;
+        margin-left: 320px;
+        position: fixed;
+        height: 40px;
+        width: 80px;
+        z-index: 1;
+        border-radius: 30px;
+        border: none;
+        background-color: orange; 
+        cursor: pointer;
+    }
+    ul{
+        margin-top: 150px;
+        margin-left: 100px;
+        text-decoration: none;
+        position: fixed;
+    }
+    ul li{
+        margin-top: 15px;
+        list-style-type: none;
+        position: relative;
+        cursor: pointer;
+    }
+    ul li::before{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-image: url(./images/empty.webp);
+        background-position: center;
+        background-size: cover;
+        left: -45px;
+        margin-top: 3px;
+    }
+    ul li.cheked{
+        color: #555;
+        text-decoration: line-through;
+    }
+    ul li.cheked::before{
+        background-image: url(./images/cheked.png);
+    }
+    ul li span{
+        position: fixed;
+        height: 25px;
+        width: 25px;
+        z-index: 1;
+        right: 0;
+        margin-right: 500px;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    ul li span:hover{
+        background-color: #555;
+        color: white;
+    }
+}
+@media (max-width:420px) {
+    body{
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+    }
+    div{
+        font-size: small;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: white;
+        height: 350px;
+        width: 250px;
+    }
+    h4{
+        margin-left: 20px;
+        margin-top: 20px;   
+        position: fixed;
+    }
+    .fa-solid{
+        margin-left: 10px;
+        color: orange;
+    }
+    input{
+        position: fixed;
+        margin-top: 70px;
+        padding-left: 15px;
+        margin-left: 20px;
+        width: 200px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        background-color:bisque;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        margin-top: 70px;
+        margin-left: 170px;
+        position: fixed;
+        height: 30px;
+        width: 60px;
+        z-index: 1;
+        border-radius: 30px;
+        border: none;
+        background-color: orange; 
+        cursor: pointer;
+    }
+    ul{
+        margin-top: 120px;
+        margin-left: 80px;
+        text-decoration: none;
+        position: fixed;
+    }
+    ul li{
+        margin-top: 15px;
+        list-style-type: none;
+        position: relative;
+        cursor: pointer;
+    }
+    ul li::before{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-image: url(./images/empty.webp);
+        background-position: center;
+        background-size: cover;
+        left: -45px;
+        margin-top: 0px;
+    }
+    ul li.cheked{
+        color: #555;
+        text-decoration: line-through;
+    }
+    ul li.cheked::before{
+        background-image: url(./images/cheked.png);
+    }
+    ul li span{
+        position: fixed;
+        height: 25px;
+        width: 25px;
+        z-index: 1;
+        right: 0;
+        margin-right: 170px;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    ul li span:hover{
+        background-color: #555;
+        color: white;
+    }
+}
